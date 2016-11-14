@@ -26,9 +26,10 @@
   },
   "scripts": {
     "test": "echo \"さとリンリン\"",
-    "prestart": "gulp ejs & gulp less & gulp js & npm run copy:lib",
+    "prestart": "gulp ejs & gulp less & gulp js & npm run copy:lib & npm run copy:api",
     "start": "gulp serve",
-    "copy:lib": "cpx \"src/lib/*\" mock/lib"
+    "copy:lib": "cpx \"src/lib/*\" mock/lib",
+    "copy:api": "cpx \"src/api/**/*\" mock/api"
   },
   "author": "",
   "license": "ISC"
