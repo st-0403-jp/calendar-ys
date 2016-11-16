@@ -17,13 +17,15 @@ var path = {
         ejs: 'src/ejs',
         less: 'src/less',
         js: 'src/js',
-        lib: 'src/lib'
+        lib: 'src/lib',
+        bootstrap: 'src/bootstrap'
     },
     mock: {
         html: 'mock',
         css: 'mock/css',
         js: 'mock/js',
-        lib: 'mock/lib'
+        lib: 'mock/lib',
+        bootstrap: 'mock/bootstrap'
     },
     dist: {
 
@@ -31,7 +33,8 @@ var path = {
     pathData: {
         css: '/css',
         js: '/js',
-        lib: '/lib'
+        lib: '/lib',
+        bootstrap: '/bootstrap'
     }
 };
 

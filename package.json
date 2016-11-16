@@ -29,7 +29,8 @@
     "prestart": "gulp ejs & gulp less & gulp js & npm run copy:lib & npm run copy:api",
     "start": "gulp serve",
     "copy:lib": "cpx \"src/lib/*\" mock/lib",
-    "copy:api": "cpx \"src/api/**/*\" mock/api"
+    "copy:api": "cpx \"src/api/**/*\" mock/api",
+    "copy:bootflat": "cpx \"src/bootflat/**/*\" mock"
   },
   "author": "",
   "license": "ISC"

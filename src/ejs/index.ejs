@@ -1,9 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja-JP">
 <head>
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="<%= data.path.bootstrap %>/bootstrap.css">
+<!-- bootflat css -->
+<link rel="stylesheet" type="text/css" href="<%= data.path.css %>/bootflat.css">
+<link rel="stylesheet" type="text/css" href="<%= data.path.css %>/bootflat-square.css">
+<link rel="stylesheet" type="text/css" href="<%= data.path.css %>/bootflat-extensions.css">
+<link rel="stylesheet" type="text/css" href="<%= data.path.css %>/font-awesome.min.css">
+<!-- common css -->
 <link rel="stylesheet" type="text/css" href="<%= data.path.css %>/common.css">
+<!-- js lib -->
 <script src="<%= data.path.lib %>/jquery.min.js"></script>
 <script src="<%= data.path.lib %>/handlebars.min.js"></script>
+<script src="<%= data.path.js %>/bootstrap.min.js"></script>
 <title>Y'sカレンダー</title>
 </head>
 <body>
@@ -11,29 +21,44 @@
 <h1>Y'sカレンダー</h1>
 </header>
 <section id="main-wrap">
-    <div id="calendar">
-        <div class="calendar-list">
-            <dl>
-                <dt>01</dt>
-                <dd></dd>
-            </dl>
-        </div>
-        <div class="calendar-list">
-            <dl>
-                <dt>02</dt>
-                <dd></dd>
-            </dl>
-        </div>
-        <div class="calendar-list">
-            <dl>
-                <dt>03</dt>
-                <dd></dd>
-            </dl>
-        </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2">blue</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-1">Red</div>
+        <div class="col-sm-3">detail</div>
+      </div>
     </div>
+    <!--
+        <div id="calendar">
+            <div class="calendar-list">
+                <dl>
+                    <dt>01</dt>
+                    <dd></dd>
+                </dl>
+            </div>
+            <div class="calendar-list">
+                <dl>
+                    <dt>02</dt>
+                    <dd></dd>
+                </dl>
+            </div>
+            <div class="calendar-list">
+                <dl>
+                    <dt>03</dt>
+                    <dd></dd>
+                </dl>
+            </div>
+        </div>
+    -->
 </section>
 <footer>
-    <p>© Y's 2016 All Rights Reserve</p>
+    © Y's 2016 All Rights Reservex
 </footer>
 </body>
 <script src=""></script>
