@@ -14,6 +14,7 @@
 <script src="<%= data.path.lib %>/jquery.min.js"></script>
 <script src="<%= data.path.lib %>/handlebars.min.js"></script>
 <script src="<%= data.path.js %>/bootstrap.min.js"></script>
+<script src="<%= data.path.js %>/global.js"></script>
 <title>Y'sカレンダー</title>
 </head>
 <body>
@@ -21,45 +22,323 @@
 <h1>Y'sカレンダー</h1>
 </header>
 <section id="main-wrap">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2">blue</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-1">Red</div>
-        <div class="col-sm-3">detail</div>
-      </div>
-    </div>
-    <!--
-        <div id="calendar">
-            <div class="calendar-list">
-                <dl>
-                    <dt>01</dt>
-                    <dd></dd>
+    <div id="calendar" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">お知らせ</div>
+            <div class="col-sm-7 calendar-menu calendar-grid">メニュー</div>
+            <div class="col-sm-2">DETAIL</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid"><p class="calendar-day">月</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">火</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">水</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">木</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">金</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">土</p></div>
+            <div class="col-sm-1 calendar-grid"><p class="calendar-day">日</p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">01</dt>
+                    <dd class="calendar-schedule">
+                        <p>予定</p>
+                        <p>ああああ</p>
+                        <p>寝る</p>
+                    </dd>
                 </dl>
             </div>
-            <div class="calendar-list">
-                <dl>
-                    <dt>02</dt>
-                    <dd></dd>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">02</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                        <p>ああああいいいいいいい</p>
+                    </dd>
                 </dl>
             </div>
-            <div class="calendar-list">
-                <dl>
-                    <dt>03</dt>
-                    <dd></dd>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">03</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">04</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">05</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">06</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">           
+                    <dt class="calendar-date">07</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
                 </dl>
             </div>
         </div>
-    -->
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">08</dt>
+                    <dd class="calendar-schedule">
+                        <p>予定</p>
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">09</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">10</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">11</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">12</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">13</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">           
+                    <dt class="calendar-date">14</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">15</dt>
+                    <dd class="calendar-schedule">
+                        <p>予定</p>
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">16</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">17</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">18</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">19</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">20</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">           
+                    <dt class="calendar-date">21</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">22</dt>
+                    <dd class="calendar-schedule">
+                        <p>予定</p>
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">23</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">24</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">25</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">26</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">27</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">           
+                    <dt class="calendar-date">28</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">29</dt>
+                    <dd class="calendar-schedule">
+                        <p>予定</p>
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">30</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date">31</dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date"></dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date"></dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">
+                    <dt class="calendar-date"></dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-1 calendar-grid">
+                <dl class="calendar-box">           
+                    <dt class="calendar-date"></dt>
+                    <dd class="calendar-schedule">
+                        <p>ああああ</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </section>
 <footer>
-    © Y's 2016 All Rights Reservex
+    © Y's 2016 All Rights Reserve
 </footer>
 </body>
-<script src=""></script>
+<script src="<%= data.path.js %>/top.js"></script>
 </html>

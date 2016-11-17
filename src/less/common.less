@@ -20,9 +20,33 @@ header, footer {
 
 #calendar {
     margin: 0 auto;
+    .calendar-grid {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .calendar-menu {
+    }
+    .calendar-day {
+        text-align: center;
+    }
+    .calendar-box {
+        border: 1px solid #222;
+        margin-bottom: 5px;
+        .calendar-date {
+            height: 20px;
+            line-height: 20px;
+            border-bottom: 1px solid #222;
+        }
+        .calendar-schedule {
+            height: 85px;
+            overflow: hidden;
 
-    .calendar-list {
-
+            p {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
     }
 }
 
