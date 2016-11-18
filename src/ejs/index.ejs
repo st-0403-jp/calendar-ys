@@ -15,6 +15,7 @@
 <script src="<%= data.path.lib %>/handlebars.min.js"></script>
 <script src="<%= data.path.js %>/bootstrap.min.js"></script>
 <script src="<%= data.path.js %>/global.js"></script>
+<script src="<%= data.path.js %>/common.js"></script>
 <title>Y'sカレンダー</title>
 </head>
 <body>
@@ -22,11 +23,11 @@
 <h1>Y'sカレンダー</h1>
 </header>
 <section id="main-wrap">
-    <div class="container-fluid main-grid">
+    <div id="calendar" class="container-fluid main-grid">
         <div class="row">
             <div class="col-sm-3 top-news">お知らせ</div>
             <div class="col-sm-7 col-sm-offset-3 calendar-menu calendar-grid">メニュー</div>
-            <div class="col-sm-2">DETAIL</div>
+            <div class="col-sm-2 calendar-detail">DETAIL</div>
         </div>
         <div class="row">
             <div class="col-sm-1 col-sm-offset-3 calendar-grid"><p class="calendar-day">月</p></div>
@@ -340,5 +341,68 @@
     © Y's 2016 All Rights Reserve
 </footer>
 </body>
+<script id="template" type="text/x-handlebars-template">
+<div class="row">
+    <div class="col-sm-1 col-sm-offset-3 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">01</dt>
+            <dd class="calendar-schedule">
+                <p>テンプレート</p>
+                <p>ああああ</p>
+                <p>寝る</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">02</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+                <p>ああああいいいいいいい</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">03</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">04</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">05</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">
+            <dt class="calendar-date">06</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-sm-1 calendar-grid">
+        <dl class="calendar-box">           
+            <dt class="calendar-date">07</dt>
+            <dd class="calendar-schedule">
+                <p>ああああ</p>
+            </dd>
+        </dl>
+    </div>
+</div>
+</script>
 <script src="<%= data.path.js %>/top.js"></script>
 </html>

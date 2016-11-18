@@ -1,4 +1,8 @@
 /*global.js*/
 
-const commonJs = {};
-const pageJs = {};
+/**
+ * @description
+ * global変数の定義
+ */
+const globalCommon = {};
+const globalPage = {};
