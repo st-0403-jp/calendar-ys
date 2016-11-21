@@ -1,128 +1,222 @@
 {
-    "data": [
+    "year": "2016",
+    "month": "12",
+    "weekData": [
         {
-            "date": "01",
-            "day": "木"
+            "week": "01",
+            "dateData": [
+                {
+                    "date": null,
+                    "day": null,
+                    "dummy": true
+                },
+                {
+                    "date": null,
+                    "day": null,
+                    "dummy": true
+                },
+                {
+                    "date": null,
+                    "day": null,
+                    "dummy": true
+                },
+                {
+                    "date": "01",
+                    "day": "木",
+                    "dummy": false
+                },
+                {
+                    "date": "02",
+                    "day": "金",
+                    "dummy": false
+                },
+                {
+                    "date": "03",
+                    "day": "土",
+                    "dummy": false
+                },
+                {
+                    "date": "04",
+                    "day": "日",
+                    "dummy": false
+                }
+            ]
         },
         {
-            "date": "02",
-            "day": "金"
+            "week": "02",
+            "dateData": [
+                {
+                    "date": "05",
+                    "day": "月",
+                    "dummy": false
+                },
+                {
+                    "date": "06",
+                    "day": "火",
+                    "eventData": [
+                        "予定１",
+                        "予定２",
+                        "予定３"
+                    ],
+                    "dummy": false
+                },
+                {
+                    "date": "07",
+                    "day": "水",
+                    "dummy": false
+                },
+                {
+                    "date": "08",
+                    "day": "木",
+                    "dummy": false
+                },
+                {
+                    "date": "09",
+                    "day": "金",
+                    "dummy": false
+                },
+                {
+                    "date": "10",
+                    "day": "土",
+                    "dummy": false
+                },
+                {
+                    "date": "11",
+                    "day": "日",
+                    "dummy": false
+                }
+            ]
         },
         {
-            "date": "03",
-            "day": "土"
+            "week": "03",
+            "dateData": [
+                {
+                    "date": "12",
+                    "day": "月",
+                    "dummy": false
+                },
+                {
+                    "date": "13",
+                    "day": "火",
+                    "eventData": [
+                        "予定１",
+                        "予定２",
+                        "予定３"
+                    ],
+                    "dummy": false
+                },
+                {
+                    "date": "14",
+                    "day": "水",
+                    "dummy": false
+                },
+                {
+                    "date": "15",
+                    "day": "木",
+                    "dummy": false
+                },
+                {
+                    "date": "16",
+                    "day": "金",
+                    "dummy": false
+                },
+                {
+                    "date": "17",
+                    "day": "土",
+                    "dummy": false
+                },
+                {
+                    "date": "18",
+                    "day": "日",
+                    "dummy": false
+                }
+            ]
         },
         {
-            "date": "04",
-            "day": "日"
+            "week": "04",
+            "dateData": [
+                {
+                    "date": "19",
+                    "day": "月",
+                    "dummy": false
+                },
+                {
+                    "date": "20",
+                    "day": "火",
+                    "eventData": [
+                        "予定１",
+                        "予定２",
+                        "予定３"
+                    ],
+                    "dummy": false
+                },
+                {
+                    "date": "21",
+                    "day": "水",
+                    "dummy": false
+                },
+                {
+                    "date": "22",
+                    "day": "木",
+                    "dummy": false
+                },
+                {
+                    "date": "23",
+                    "day": "金",
+                    "dummy": false
+                },
+                {
+                    "date": "24",
+                    "day": "土",
+                    "dummy": false
+                },
+                {
+                    "date": "25",
+                    "day": "日",
+                    "dummy": false
+                }
+            ]
         },
         {
-            "date": "05",
-            "day": "月"
-        },
-        {
-            "date": "06",
-            "day": "火"
-        },
-        {
-            "date": "07",
-            "day": "水"
-        },
-        {
-            "date": "08",
-            "day": "木"
-        },
-        {
-            "date": "09",
-            "day": "金"
-        },
-        {
-            "date": "10",
-            "day": "土"
-        },
-        {
-            "date": "11",
-            "day": "日"
-        },
-        {
-            "date": "12",
-            "day": "月"
-        },
-        {
-            "date": "13",
-            "day": "火"
-        },
-        {
-            "date": "14",
-            "day": "水"
-        },
-        {
-            "date": "15",
-            "day": "木"
-        },
-        {
-            "date": "16",
-            "day": "金"
-        },
-        {
-            "date": "17",
-            "day": "土"
-        },
-        {
-            "date": "18",
-            "day": "日"
-        },
-        {
-            "date": "19",
-            "day": "月"
-        },
-        {
-            "date": "20",
-            "day": "火"
-        },
-        {
-            "date": "21",
-            "day": "水"
-        },
-        {
-            "date": "22",
-            "day": "木"
-        },
-        {
-            "date": "23",
-            "day": "金"
-        },
-        {
-            "date": "24",
-            "day": "土"
-        },
-        {
-            "date": "25",
-            "day": "日"
-        },
-        {
-            "date": "26",
-            "day": "月"
-        },
-        {
-            "date": "27",
-            "day": "火"
-        },
-        {
-            "date": "28",
-            "day": "水"
-        },
-        {
-            "date": "29",
-            "day": "木"
-        },
-        {
-            "date": "30",
-            "day": "金"
-        },
-        {
-            "date": "31",
-            "day": "土"
+            "week": "05",
+            "dateData": [
+                {
+                    "date": "26",
+                    "day": "月",
+                    "dummy": false
+                },
+                {
+                    "date": "27",
+                    "day": "火",
+                    "eventData": [
+                        "予定１",
+                        "予定２",
+                        "予定３"
+                    ],
+                    "dummy": false
+                },
+                {
+                    "date": "28",
+                    "day": "水"
+                },
+                {
+                    "date": "29",
+                    "day": "木"
+                },
+                {
+                    "date": "30",
+                    "day": "金"
+                },
+                {
+                    "date": "31",
+                    "day": "土"
+                },
+                {
+                    "date": null,
+                    "day": null,
+                    "dummy": true
+                }
+            ]
         }
     ]
 }

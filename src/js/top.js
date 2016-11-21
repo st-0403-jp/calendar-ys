@@ -1,22 +1,17 @@
 /* top.js */
 globalPage.top = function () {
-    var requestData = {
-        type: 'GET',
-        url: '/api/201611/date.json',
-        contentType: 'application/json',
-        dataType: 'json'
-    };
-    $.ajax(requestData).done(function (responseData) {
-        console.log(responseData);
-        setTimeout(function () {
-            var source   = $("#calendar-template").html();
-            var template = Handlebars.compile(source);
-            var renderTmp = template(responseData);
-            $('#calendar').html(renderTmp);
-        }, 2000);
-    }).fail(function (err, status, data) {
-        console.log(err.responseText);
-        console.log(JSON.parse(err.responseText));
-    });
+    var calendarApiUrl = '/api/' + globalNowYear + globalNowMonth + '/date.json';
+    globalCommon.util.requestCalendar({
+                type: 'GET',
+                url: calendarApiUrl,
+                contentType: 'application/json',
+                dataType: 'json'
+            }, function (resData) {
+                //setTimeout(function () {
+                    globalCommon.util.renderHandlebars('#calendar-template', '#calendar', resData);
+                //}, 2000);
+            }, function (resErr) {
+                console.log(resErr.responseText);
+            });
 };
 globalPage.top();

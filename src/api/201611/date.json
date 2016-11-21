@@ -7,7 +7,8 @@
             "dateData": [
                 {
                     "date": null,
-                    "day": null
+                    "day": null,
+                    "dummy": true
                 },
                 {
                     "date": "01",
@@ -16,27 +17,33 @@
                         "予定１",
                         "予定２",
                         "予定３"
-                    ]
+                    ],
+                    "dummy": false
                 },
                 {
                     "date": "02",
-                    "day": "水"
+                    "day": "水",
+                    "dummy": false
                 },
                 {
                     "date": "03",
-                    "day": "木"
+                    "day": "木",
+                    "dummy": false
                 },
                 {
                     "date": "04",
-                    "day": "金"
+                    "day": "金",
+                    "dummy": false
                 },
                 {
                     "date": "05",
-                    "day": "土"
+                    "day": "土",
+                    "dummy": false
                 },
                 {
                     "date": "06",
-                    "day": "日"
+                    "day": "日",
+                    "dummy": false
                 }
             ]
         },
@@ -45,7 +52,8 @@
             "dateData": [
                 {
                     "date": "07",
-                    "day": "月"
+                    "day": "月",
+                    "dummy": false
                 },
                 {
                     "date": "08",
@@ -54,27 +62,33 @@
                         "予定１",
                         "予定２",
                         "予定３"
-                    ]
+                    ],
+                    "dummy": false
                 },
                 {
                     "date": "09",
-                    "day": "水"
+                    "day": "水",
+                    "dummy": false
                 },
                 {
                     "date": "10",
-                    "day": "木"
+                    "day": "木",
+                    "dummy": false
                 },
                 {
                     "date": "11",
-                    "day": "金"
+                    "day": "金",
+                    "dummy": false
                 },
                 {
                     "date": "12",
-                    "day": "土"
+                    "day": "土",
+                    "dummy": false
                 },
                 {
                     "date": "13",
-                    "day": "日"
+                    "day": "日",
+                    "dummy": false
                 }
             ]
         },
@@ -83,7 +97,8 @@
             "dateData": [
                 {
                     "date": "14",
-                    "day": "月"
+                    "day": "月",
+                    "dummy": false
                 },
                 {
                     "date": "15",
@@ -92,27 +107,33 @@
                         "予定１",
                         "予定２",
                         "予定３"
-                    ]
+                    ],
+                    "dummy": false
                 },
                 {
                     "date": "16",
-                    "day": "水"
+                    "day": "水",
+                    "dummy": false
                 },
                 {
                     "date": "17",
-                    "day": "木"
+                    "day": "木",
+                    "dummy": false
                 },
                 {
                     "date": "18",
-                    "day": "金"
+                    "day": "金",
+                    "dummy": false
                 },
                 {
                     "date": "19",
-                    "day": "土"
+                    "day": "土",
+                    "dummy": false
                 },
                 {
                     "date": "20",
-                    "day": "日"
+                    "day": "日",
+                    "dummy": false
                 }
             ]
         },
@@ -121,7 +142,8 @@
             "dateData": [
                 {
                     "date": "21",
-                    "day": "月"
+                    "day": "月",
+                    "dummy": false
                 },
                 {
                     "date": "22",
@@ -130,27 +152,33 @@
                         "予定１",
                         "予定２",
                         "予定３"
-                    ]
+                    ],
+                    "dummy": false
                 },
                 {
                     "date": "23",
-                    "day": "水"
+                    "day": "水",
+                    "dummy": false
                 },
                 {
                     "date": "24",
-                    "day": "木"
+                    "day": "木",
+                    "dummy": false
                 },
                 {
                     "date": "25",
-                    "day": "金"
+                    "day": "金",
+                    "dummy": false
                 },
                 {
                     "date": "26",
-                    "day": "土"
+                    "day": "土",
+                    "dummy": false
                 },
                 {
                     "date": "27",
-                    "day": "日"
+                    "day": "日",
+                    "dummy": false
                 }
             ]
         },
@@ -159,7 +187,8 @@
             "dateData": [
                 {
                     "date": "28",
-                    "day": "月"
+                    "day": "月",
+                    "dummy": false
                 },
                 {
                     "date": "29",
@@ -168,7 +197,8 @@
                         "予定１",
                         "予定２",
                         "予定３"
-                    ]
+                    ],
+                    "dummy": false
                 },
                 {
                     "date": "30",
@@ -180,15 +210,18 @@
                 },
                 {
                     "date": null,
-                    "day": null
+                    "day": null,
+                    "dummy": true
                 },
                 {
                     "date": null,
-                    "day": null
+                    "day": null,
+                    "dummy": true
                 },
                 {
                     "date": null,
-                    "day": null
+                    "day": null,
+                    "dummy": true
                 }
             ]
         }
