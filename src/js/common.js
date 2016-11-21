@@ -10,7 +10,6 @@ globalCommon.util = function () {
 };
 
 globalCommon.eventHandle = function () {
-    console.log(this);
 };
 
 /* 実行 */

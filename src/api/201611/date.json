@@ -6,6 +6,10 @@
             "week": "01",
             "dateData": [
                 {
+                    "date": null,
+                    "day": null
+                },
+                {
                     "date": "01",
                     "day": "火",
                     "eventData": [
@@ -173,6 +177,18 @@
                 {
                     "date": "31",
                     "day": "木"
+                },
+                {
+                    "date": null,
+                    "day": null
+                },
+                {
+                    "date": null,
+                    "day": null
+                },
+                {
+                    "date": null,
+                    "day": null
                 }
             ]
         }
