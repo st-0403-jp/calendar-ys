@@ -6,5 +6,5 @@
  */
 const globalCommon = {};
 const globalPage = {};
-const globalNowYear = new Date().getFullYear();
-const globalNowMonth = new Date().getMonth() + 1;
+const globalNowYear = (new Date().getFullYear()).toString();
+const globalNowMonth = (new Date().getMonth() + 1).toString();
