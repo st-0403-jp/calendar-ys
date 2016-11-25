@@ -7,6 +7,9 @@ globalCommon.util = function () {
             if (templateId == null || typeof templateId !== 'string') {
                 throw new Error('テンプレートがありません');
             }
+            if (renderDomId == null || typeof renderDomId !== 'string') {
+                throw new Error('出力先がありません');
+            }
             var source   = $(templateId).html();
             var template = Handlebars.compile(source);
             $(renderDomId).html((optionData) ? template(optionData) : template);
@@ -37,6 +40,18 @@ globalCommon.util = function () {
 globalCommon.eventHandle = function () {
 };
 
+globalCommon.handlebarsHelper = function () {
+    /* handlebars register helper */
+    Handlebars.registerHelper('equal', function(val1, val2, option) {
+        if (val1 === val2) {
+            return option.fn(this);
+        } else {
+            return option.inverse(this);
+        }
+    });
+};
+
 /* 実行 */
 globalCommon.util = globalCommon.util();
 globalCommon.eventHandle();
+globalCommon.handlebarsHelper();
