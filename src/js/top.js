@@ -31,6 +31,8 @@ globalPage.top = function () {
                     globalCommon.util.renderHandlebars('#calendar-template', '#calendar', resData);
                 }, function (resErr) {
                     console.log(resErr.responseText);
+                    var errorCalendar = '<div class="col-sm-7 col-sm-offset-3 calendar-grid"><p class="" style="text-align: center;">データが見つかりませんでした</p></div>'
+                    $('#calendar').html(errorCalendar);
                 });
     });
     // 初期表示のカレンダーをレンダリング
